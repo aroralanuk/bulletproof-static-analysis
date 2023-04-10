@@ -35,6 +35,7 @@ mod range_proof;
 mod transcript;
 
 pub use crate::errors::ProofError;
+pub use crate::examples::OrGate;
 pub use crate::generators::{BulletproofGens, BulletproofGensShare, PedersenGens};
 pub use crate::linear_proof::LinearProof;
 pub use crate::range_proof::RangeProof;
@@ -49,6 +50,8 @@ pub mod range_proof_mpc {
 #[cfg(feature = "std")]
 #[cfg(feature = "multiprover")]
 pub mod r1cs;
+
+pub mod examples;
 
 #[cfg(feature = "multiprover")]
 #[allow(missing_docs)]

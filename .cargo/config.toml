@@ -1,0 +1,2 @@
+[alias]
+inspect = ["run", "--bin", "constraints"]

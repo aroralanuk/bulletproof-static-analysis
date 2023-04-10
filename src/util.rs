@@ -397,4 +397,5 @@ mod tests {
         assert_eq!(v.1, Scalar::zero());
         assert_eq!(v.2, Scalar::zero());
     }
+
 }

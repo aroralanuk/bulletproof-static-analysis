@@ -1,12 +1,12 @@
 [package]
 name = "mpc-bulletproof"
 # Before doing a release:
-# - update version field 
+# - update version field
 # - update html_root_url
 # - ensure yoloproofs was disabled in an atomic (revertable) commit
 # - update CHANGELOG
 version = "2.0.0"
-authors = ["Cathie Yun <cathieyun@gmail.com>", 
+authors = ["Cathie Yun <cathieyun@gmail.com>",
            "Henry de Valence <hdevalence@hdevalence.ca>",
            "Oleg Andreev <oleganza@gmail.com>"]
 readme = "README.md"
@@ -59,6 +59,10 @@ integration_test = []
 name = "range_proof"
 
 [[test]]
+name = "static_analysis"
+path = "static_analysis/main.rs"
+
+[[test]]
 name = "r1cs"
 required-features = ["yoloproofs"]
 
@@ -84,4 +88,8 @@ required-features = ["yoloproofs"]
 [[bench]]
 name = "linear_proof"
 harness = false
+
+[[bin]]
+name = "constraints"
+path = "static_analysis/main.rs"
 

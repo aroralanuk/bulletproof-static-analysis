@@ -47,6 +47,8 @@ pub trait ConstraintSystem {
     /// Used as a profiling metric
     fn num_constraints(&self) -> usize;
 
+    fn all_variables(&self) -> Vec<Scalar>;
+
     /// Fetch the number of multiplication gates registered in the prover
     ///
     /// Used as a profiling metric
